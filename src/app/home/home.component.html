@@ -1,0 +1,23 @@
+  <form >
+  
+  <div class="row">
+    <div class="col-sm-2">
+   <select name="test" [(ngModel)]="selectedSeries" class="form-control ml-2">
+    <option *ngFor="let item of Series" [value]=item.value>{{ item.description }}</option>
+   </select> 
+  </div>
+    <div class="col-sm-10">
+      <carousel [(activeSlide)]="activeSlideIndex" >
+        <slide *ngFor="let slide of slides; let index=index">
+          <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;height: 700px;">
+          <div class="carousel-caption">
+             <h4>{{slide.text}}</h4>
+          </div>
+        </slide>
+      </carousel>
+      <br/>
+    
+    </div>
+  </div>
+</form>
+ 
