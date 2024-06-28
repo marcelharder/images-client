@@ -1,5 +1,17 @@
-  <form >
   
+  // get a list of cards with the choices to look at, the picture in the card comes is the first picture in the list
+  <div class="row equal">
+    <div *ngFor="let t of SeriesArray" class="col-lg-2 col-md-3 col-sm-6">
+      <app-member-card [slidecaption]="t"></app-member-card>
+    </div>
+  </div>
+ 
+  
+  
+  
+  
+  
+  <form >
   <div class="row">
     <div class="col-sm-2">
    <select name="test" [(ngModel)]="selectedSeries" class="form-control ml-2">

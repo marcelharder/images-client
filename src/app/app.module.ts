@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MemberCardComponent } from './member-card/member-card.component';
 
 @NgModule({
   declarations: [			
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     ImageViewerComponent,
       HomeComponent,
       NavComponent,
-      AboutComponent
+      AboutComponent,
+      MemberCardComponent
    ],
   imports: [
     HttpClientModule,
